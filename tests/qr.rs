@@ -50,8 +50,8 @@ fn test_qr() {
 
 }
 
-// 返回 元组
-// 第一个 表示 旋转 反射 错切 信息
+// 返回：
+// 第一个 表示 旋转 反射 错切 信息；行列式 等于 正负 1
 // 第二个 表示 缩放 信息，缩放系数 全为正值
 // 第三个 表示 平移 信息
 fn decompose_transform(m: nalgebra::Matrix3<f64>) -> (nalgebra::Matrix3<f64>, nalgebra::Matrix3<f64>, nalgebra::Vector2<f64>) {
